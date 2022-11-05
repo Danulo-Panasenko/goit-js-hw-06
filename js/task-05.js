@@ -1,7 +1,6 @@
-const refs = {
-  span: document.querySelector("#name-output"),
-  input: document.querySelector("#name-input"),
-};
-refs.input.addEventListener("input", () => {
-  refs.span.textContent = refs.input.value ? refs.input.value : "Anonymous";
+const inputEl = document.querySelector("#name-input");
+const spanEl = document.querySelector("#name-output");
+
+inputEl.addEventListener("input", () => {
+  spanEl.textContent = inputEl.value ? inputEl.value : "Anonymous";
 });
